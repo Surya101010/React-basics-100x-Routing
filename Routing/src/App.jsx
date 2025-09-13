@@ -1,12 +1,16 @@
 
 import './App.css'
-import {BrowserRouter , Routes ,Route} from 'react-router-dom';
+import {BrowserRouter , Routes ,Route, Link} from 'react-router-dom';
 function App() {
 
   return (
     <>
-    Allen| Class 11 | Class 12
       <BrowserRouter>
+      <Link to="/">Allen</Link>
+      |
+      <Link to="/neet/online-coaching-class-11">Class XI</Link>
+      |
+      <Link to="/neet/online-coaching-class-12">Class XII</Link>
       <Routes>
         <Route path='/neet/online-coaching-class-11' element={<Class11Program />} />
         <Route path='/neet/online-coaching-class-12' element={<Class12Program />} />
